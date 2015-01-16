@@ -14,22 +14,18 @@ body {
 .navigation-wrapper {
     position: relative;
     width: 50%;
-    margin: 0 auto;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .navigation-wrapper img{
     padding-top: 4px;
-    padding-right: 40px;
-}
-
-.navigation-wrapper ul {
-    margin: 12px;
 }
 
 .menu-links {
+    margin: 0px;
     padding: 0px;
     color: rgb(84,44,127);
-    overflow: hidden;
     list-style-type: none;
     font-size: 16px;
 }
