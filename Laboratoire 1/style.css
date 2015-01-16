@@ -1,0 +1,56 @@
+body {
+    margin: 0px;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    top: 0px;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navigation-wrapper {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.navigation-wrapper img{
+    padding-top: 4px;
+    padding-right: 40px;
+}
+
+.navigation-wrapper ul {
+    margin: 12px;
+}
+
+.menu-links {
+    padding: 0px;
+    color: rgb(84,44,127);
+    overflow: hidden;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.link {
+    display: inline;
+    padding-right: 20px;
+}
+
+#content {
+    padding-top: 50px;
+    max-width: 1200px;
+    width:80%;
+    margin: 0 auto;
+    background-color: #dddddd;
+}
+
+.post{
+    width: 33%;
+    background-color: red;
+    float: left;
+}
+
+
