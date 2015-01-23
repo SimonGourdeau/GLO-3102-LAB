@@ -1,0 +1,50 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.carousel {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: black;
+    position: relative;
+}
+
+.carousel .carousel-indicator {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    width: inherit;
+    text-align: center;
+    z-index: 15;
+}
+
+.carousel .carousel-indicator li {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.carousel .carousel-indicator li.active {
+    background-color: white;
+}
+
+.carousel #items{
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.carousel #items div.item{
+    top: 0;
+    position: absolute;
+    display: inline-block;
+}
+
+.carousel #items .item img{
+    display: inline-block;
+}

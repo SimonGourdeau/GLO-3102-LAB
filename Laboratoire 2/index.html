@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="carousel">
+    <ol class="carousel-indicator">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <div id="items">
+        <div class="item" style="left: 0px">
+            <img src="http://lorempixel.com/800/500/city"/>
+        </div>
+        <div class="item" style="left: 800px">
+            <img src="http://lorempixel.com/800/500/people"/>
+        </div>
+        <div class="item" style="left: 800px">
+            <img src="http://lorempixel.com/800/500/food"/>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="carousel.js"></script>
+<script type="text/javascript">
+    var carousel = Carousel();
+    var readyStateCheckInterval = setInterval(function () {
+        if (document.readyState === "complete") {
+            clearInterval(readyStateCheckInterval);
+            carousel.start();
+        }
+    }, 10)
+</script>
+</html>
