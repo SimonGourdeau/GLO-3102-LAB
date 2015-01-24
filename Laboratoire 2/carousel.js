@@ -12,7 +12,6 @@ Carousel = function () {
 
     var that = {};
 
-    // TODO implement this and bind it to arrows
     that.goTo = function (index) {
         if (index < size) {
             currentIndex = index;
@@ -24,38 +23,44 @@ Carousel = function () {
         if (newIndex === size) {
             newIndex = 0;
         }
-        slide(currentIndex, newIndex, RIGHT, function () {
-            document.getElementsByClassName("carousel-indicator")[0].children[currentIndex].className = "";
-            document.getElementsByClassName("carousel-indicator")[0].children[newIndex].className = "active";
-            currentIndex = newIndex;
-        });
+        slide(currentIndex, newIndex, LEFT);
+    }
+
+    that.previousItem = function(){
+        var newIndex = currentIndex - 1;
+        if (newIndex < 0) {
+            newIndex = size - 1;
+        }
+        slide(currentIndex, newIndex, RIGHT);
     }
 
     that.start = function () {
         window.setInterval(function () {
             that.nextItem();
-        }, 3000)
+        }, 3000);
     }
 
-    // TODO fix the scrolling direction
-    slide = function (fromIndex, toIndex, slideDirection, callback) {
+    slide = function (fromIndex, toIndex, slideDirection) {
         var items = document.getElementById("items").children;
         var fromItem = items[fromIndex];
         var toItem = items[toIndex];
 
-        var offset = fromItem.style.left;
-        offset = parseInt(offset.substring(0, offset.length - 2));
+        var onAnimationEnd = function (e) {
+            e.target.removeEventListener(e.type, arguments.callee);
+            document.getElementsByClassName("carousel-indicator")[0].children[currentIndex].className = "";
+            document.getElementsByClassName("carousel-indicator")[0].children[toIndex].className = "active";
+            fromItem.className = "item";
+            toItem.className = "active";
+            currentIndex = toIndex;
+        }
 
-        offset += 10;
-        fromItem.style.left = offset + 'px';
-        toItem.style.left = (offset - 800) + 'px';
-
-        if (offset < 800) {
-            window.setTimeout(function () {
-                slide(fromIndex, toIndex, slideDirection, callback);
-            }, 10);
+        toItem.addEventListener("webkitTransitionEnd", onAnimationEnd);
+        if (slideDirection === LEFT) {
+            fromItem.className = "item left";
+            toItem.className = "item next-left left";
         } else {
-            callback();
+            fromItem.className = "item right";
+            toItem.className = "item next-right right";
         }
     }
 
