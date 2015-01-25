@@ -19,7 +19,11 @@ Carousel = function () {
             return;
         }
         restartRefreshInterval();
-        slide(currentIndex, index, RIGHT);
+        if(index < currentIndex){
+            slide(currentIndex, index, RIGHT);
+        } else {
+            slide(currentIndex, index, LEFT);
+        }
         restartRefreshInterval();
     }
 
