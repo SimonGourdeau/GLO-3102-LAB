@@ -2,7 +2,6 @@
  * Created by SimonG on 1/22/2015.
  */
 
-// TODO use those
 var RIGHT = 1;
 var LEFT = -1;
 var REFRESH_INTERVAL = 3000;
@@ -59,14 +58,14 @@ Carousel = function () {
         }, REFRESH_INTERVAL);
     }
 
-    restartRefreshInterval = function () {
+    var restartRefreshInterval = function () {
         clearInterval(refreshIntervalId);
         refreshIntervalId = window.setInterval(function () {
             that.nextItem();
         }, REFRESH_INTERVAL);
     }
 
-    slide = function (fromIndex, toIndex, slideDirection) {
+    var slide = function (fromIndex, toIndex, slideDirection) {
         var items = document.getElementById("items").children;
         var fromItem = items[fromIndex];
         var toItem = items[toIndex];
