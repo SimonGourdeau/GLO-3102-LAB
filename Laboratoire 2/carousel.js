@@ -5,6 +5,7 @@
 // TODO use those
 var RIGHT = 1;
 var LEFT = -1;
+var REFRESH_INTERVAL = 3000;
 
 Carousel = function () {
     var currentIndex = 0;
@@ -51,14 +52,14 @@ Carousel = function () {
     that.start = function () {
         refreshIntervalId = window.setInterval(function () {
             that.nextItem();
-        }, 3000);
+        }, REFRESH_INTERVAL);
     }
 
     restartRefreshInterval = function () {
         clearInterval(refreshIntervalId);
         refreshIntervalId = window.setInterval(function () {
             that.nextItem();
-        }, 3000);
+        }, REFRESH_INTERVAL);
     }
 
     slide = function (fromIndex, toIndex, slideDirection) {
