@@ -7,16 +7,16 @@
 </head>
 <body>
 <div class="carousel">
-    <a class="left carousel-control">
+    <a onclick="carousel.slideLeft()" class="left carousel-control">
         <span class="chevron"><</span>
     </a>
-    <a class="right carousel-control">
+    <a onclick="carousel.slideRight()" class="right carousel-control">
         <span class="chevron">></span>
     </a>
     <ol class="carousel-indicator">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
+        <li onclick="carousel.goTo(0)" class="active"></li>
+        <li onclick="carousel.goTo(1)"></li>
+        <li onclick="carousel.goTo(2)"></li>
     </ol>
     <div id="items">
         <div class="item active">

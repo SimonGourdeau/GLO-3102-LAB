@@ -9,13 +9,27 @@ var LEFT = -1;
 Carousel = function () {
     var currentIndex = 0;
     var size = document.getElementById("items").children.length;
+    var refreshIntervalId = 0;
 
     var that = {};
 
     that.goTo = function (index) {
-        if (index < size) {
-            currentIndex = index;
+        if(currentIndex == index) {
+            return;
         }
+        restartRefreshInterval();
+        slide(currentIndex, index, RIGHT);
+        restartRefreshInterval();
+    }
+
+    that.slideLeft = function () {
+        restartRefreshInterval();
+        that.previousItem();
+    }
+
+    that.slideRight = function () {
+        restartRefreshInterval();
+        that.nextItem();
     }
 
     that.nextItem = function () {
@@ -35,7 +49,14 @@ Carousel = function () {
     }
 
     that.start = function () {
-        window.setInterval(function () {
+        refreshIntervalId = window.setInterval(function () {
+            that.nextItem();
+        }, 3000);
+    }
+
+    restartRefreshInterval = function () {
+        clearInterval(refreshIntervalId);
+        refreshIntervalId = window.setInterval(function () {
             that.nextItem();
         }, 3000);
     }
