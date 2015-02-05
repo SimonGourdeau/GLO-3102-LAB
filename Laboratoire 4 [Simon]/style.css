@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #efefef;
+    background: -moz-linear-gradient(top, #efefef 0%, #ffffff 99%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #efefef), color-stop(99%, #ffffff));
+    background: -webkit-linear-gradient(top, #efefef 0%, #ffffff 99%);
+    background: -o-linear-gradient(top, #efefef 0%, #ffffff 99%);
+    background: -ms-linear-gradient(top, #efefef 0%, #ffffff 99%);
+    background: linear-gradient(to bottom, #efefef 0%, #ffffff 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#ffffff', GradientType=0);
+}
+
+div.centered {
+    left: 50%;
+    margin: auto;
+}
+
+.calculator-frame {
+    width: 100%;
+    max-width: 400px;
+    height: 330px;
+    border-radius: 4px;
+    border: 6px outset #717171;
+    padding: 30px 0px;
+}
+
+.black-gradient {
+    background: #4f4f4f;
+    background: -moz-linear-gradient(top, #4f4f4f 0%, #0e0e0e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4f4f4f), color-stop(100%, #0e0e0e));
+    background: -webkit-linear-gradient(top, #4f4f4f 0%, #0e0e0e 100%);
+    background: -o-linear-gradient(top, #4f4f4f 0%, #0e0e0e 100%);
+    background: -ms-linear-gradient(top, #4f4f4f 0%, #0e0e0e 100%);
+    background: linear-gradient(to bottom, #4f4f4f 0%, #0e0e0e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4f4f4f', endColorstr='#0e0e0e', GradientType=0);
+}
+
+.row {
+    width: 100%;
+    padding: 4px 12px;
+    box-sizing: border-box;
+}
+
+.screen-wrapper {
+    height: 100px;
+    padding: 10px;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    background-color: #d0ffa5;
+    box-sizing: border-box;
+    border: 3px inset #708959;
+    padding: 4px;
+    text-align: right;
+    font-size: x-large;
+}
+
+.screen .row{
+    color: #709452;
+    height: 33px;
+}
+
+.btn {
+    font-size: large;
+    width: calc(20% - 4px);
+    height: 40px;
+}
+
+.btn-dark {
+    height: 30px;
+    background-color: #1f1f1f;
+    border-color: #161616;
+    color: lightgray;
+}
+
+.btn-red {
+    height: 30px;
+    background-color: #e37b75;
+    border-color: #c66b66;
+    color: #e7e7e7;
+}
