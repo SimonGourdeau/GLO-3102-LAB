@@ -1,0 +1,11 @@
+Méthodes:
+-add(val1, val2)
+-substract(val1, val2)
+-multiply(val1, val2)
+-divide(val1, val2)
+-sin(n)
+-cos(n)
+-tan(n)
+-factorial(n)
+-memorize(n)
+-getMemorizedValue()

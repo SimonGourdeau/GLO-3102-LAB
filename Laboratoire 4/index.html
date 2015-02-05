@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="jquery-2.1.3.min.js"></script>
+    <script src="Calculator.js"></script>
+    <script src="Geolocalisation.js"></script>
+</head>
+<body>
+
+<h2>Simple Calculator</h2>
+
+<input id="Result" type="text" />
+<div id="keys">
+    <div>
+        <button id="sin" type="button" value="+">sin</button>
+        <button id="cos" type="button" value="+">cos</button>
+        <button id="tan" type="button" value="+">tan</button>
+        <button id="fact" type="button" value="+">!</button>
+        <button class="operand" type="button" value="+">+</button>
+    </div>
+    <div>
+        <button class="number" type="button" value="1">1</button>
+        <button class="number" type="button" value="2">2</button>
+        <button class="number" type="button" value="3">3</button>
+        <button class="operand" type="button" value="-">-</button>
+    </div>
+    <div>
+        <button class="number" type="button" value="4">4</button>
+        <button class="number" type="button" value="5">5</button>
+        <button class="number" type="button" value="6">6</button>
+        <button class="operand" type="button" value="*">*</button>
+    </div>
+    <div>
+        <button class="number" type="button" value="7">7</button>
+        <button class="number" type="button" value="8">8</button>
+        <button class="number" type="button" value="9">9</button>
+        <button class="operand" type="button" value="/">/</button>
+    </div>
+    <div>
+        <button class="number" type="button" value="0">0</button>
+        <button type="button" value=".">.</button>
+        <button id="equal" type="button" value="=">=</button>
+    </div>
+</div>
+
+<p id="geolocalisation">Chargement de la géolocalisation...</p>
+
+</body>
+</html>
