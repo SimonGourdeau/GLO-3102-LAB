@@ -45,7 +45,7 @@ var Calculator = function () {
     }
 
     this.sin = function () {
-        equation = 'sin(' + parseFloat(currentValue) + ')';
+        currentValue = 'sin(' + parseFloat(currentValue) + ')';
         return this;
     }
 
