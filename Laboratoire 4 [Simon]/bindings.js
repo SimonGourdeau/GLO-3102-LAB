@@ -33,35 +33,38 @@ $(document).ready(function () {
         calculator.subMemory();
     });
 
-    $("#memoryClear").click(function(){
+    $("#memoryClear").click(function () {
         calculator.clearMemory();
     });
 
-    $("#memoryRecall").click(function(){
+    $("#memoryRecall").click(function () {
         calculator.getMemory();
         updateScreen();
     });
 
-    $('#sin').click(function(){
+    $('#sin').click(function () {
         calculator.sin();
         updateScreen();
     });
-    $('#cos').click(function(){
+    $('#cos').click(function () {
         calculator.cos();
         updateScreen();
     });
-    $('#tan').click(function(){
+    $('#tan').click(function () {
         calculator.tan();
         updateScreen();
     });
 
-    $("#factorial").click(function(){
+    $("#factorial").click(function () {
         calculator.factorial();
         updateScreen()
     });
 
     function updateScreen() {
-        $('#equation').text(calculator.getEquation());
-        $('#currentValue').text(calculator.getValue());
+        $('#equation, #currentValue').fadeOut("50", function () {
+            $('#equation').text(calculator.getEquation());
+            $('#currentValue').text(calculator.getValue());
+            $('#equation, #currentValue').fadeIn("50");
+        });
     }
 });

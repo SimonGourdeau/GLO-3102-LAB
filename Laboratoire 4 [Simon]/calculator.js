@@ -33,7 +33,7 @@ var Calculator = function () {
 
     this.operator = function (operator) {
         if (currentValue !== '') {
-            equation += currentValue + operator;
+            equation += ' ' + currentValue + ' ' + operator;
             currentValue = '';
         }
     }
@@ -75,8 +75,7 @@ var Calculator = function () {
     }
 
     this.factorial = function () {
-        equation += 'factorial(' + parseFloat(currentValue) + ')'
-        currentValue = '';
+        currentValue = 'factorial(' + parseFloat(currentValue) + ')'
         return this;
     }
 
@@ -94,7 +93,7 @@ var Calculator = function () {
     this.equals = function () {
         // Il faut être très prudent avec eval !!! Eval pourrait permettre d'injecter du code malicieux et l'exécuter
         // C'est pourquoi toutes nos variables 'value' sont passées dans 'parseFloat'
-        equation = equation + currentValue;
+        equation = equation + ' ' + currentValue;
         console.log('Evaluating :', equation);
         var equationSolution = eval(equation);
         equation = '';
