@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #efefef;
+    background: -moz-linear-gradient(top, #efefef 0%, #ffffff 99%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #efefef), color-stop(99%, #ffffff));
+    background: -webkit-linear-gradient(top, #efefef 0%, #ffffff 99%);
+    background: -o-linear-gradient(top, #efefef 0%, #ffffff 99%);
+    background: -ms-linear-gradient(top, #efefef 0%, #ffffff 99%);
+    background: linear-gradient(to bottom, #efefef 0%, #ffffff 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#ffffff', GradientType=0);
+}
+
+#content {
+    left: 50%;
+    margin: auto;
+    width: 300px;
+}
+
+#spinner {
+    display: block;
+    left: 50%;
+    margin: auto;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.task {
+    background-color: #3869cc;
+    padding: 8px;
+    border: 1px solid #3c498e;
+    border-radius: 5px;
+    text-align: right;
+    margin-bottom: 8px;
+}
+
+.task > .description {
+    text-align: left;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #bababa;
+    background-color: #ececec;
+    border-radius: 3px;
+    padding: 3px;
+    margin-bottom: 8px;
+}
+
+.task > .description:focus {
+    border: 1px solid #dfdfdf;
+    background-color: white;
+}
+
+.task > img {
+    height: 16px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.round-btn {
+    float: right;
+    background-color: #00bc00;
+    border: 1px solid #009700;
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+    text-align: center;
+    line-height: 32px;
+    color: white;
+    cursor: pointer;
+}
+
+.round-btn:hover {
+    background-color: #00e200;
+}
+
+.loading-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #efefef;
+    background: -moz-linear-gradient(top, #efefef 0%, #ffffff 99%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #efefef), color-stop(99%, #ffffff));
+    background: -webkit-linear-gradient(top, #efefef 0%, #ffffff 99%);
+    background: -o-linear-gradient(top, #efefef 0%, #ffffff 99%);
+    background: -ms-linear-gradient(top, #efefef 0%, #ffffff 99%);
+    background: linear-gradient(to bottom, #efefef 0%, #ffffff 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#ffffff', GradientType=0);
+}
+.loading-screen>h2>img{
+    display: block;
+    left:50%;
+    margin: 40px auto;
+    height: 40px;
+    width: 40px;
+}
