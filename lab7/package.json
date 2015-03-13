@@ -1,0 +1,457 @@
+{
+  "response": {
+    "version": "0.1",
+    "termsofService": "http://www.wunderground.com/weather/api/d/terms.html",
+    "features": {
+      "geolookup": 1
+    }
+  },
+  "location": {
+    "type": "INTLCITY",
+    "country": "CA",
+    "country_iso3166": "CA",
+    "country_name": "",
+    "state": "QB",
+    "city": "Quebec",
+    "tz_short": "EDT",
+    "tz_long": "America/Montreal",
+    "lat": "46.79000092",
+    "lon": "-71.38999939",
+    "zip": "00000",
+    "magic": "1",
+    "wmo": "WCYQB",
+    "l": "/q/zmw:00000.1.WCYQB",
+    "requesturl": "global/stations/WCYQB.html",
+    "wuiurl": "http://www.wunderground.com/global/stations/WCYQB.html",
+    "nearby_weather_stations": {
+      "airport": {
+        "station": [
+          {
+            "city": "",
+            "state": "",
+            "country": "",
+            "icao": "",
+            "lat": "",
+            "lon": ""
+          },
+          {
+            "city": "Quebec",
+            "state": "",
+            "country": "CA",
+            "icao": "CYQB",
+            "lat": "46.79111099",
+            "lon": "-71.39333344"
+          },
+          {
+            "city": "Ste Foy / U Laval",
+            "state": "",
+            "country": "CA",
+            "icao": "CWJB",
+            "lat": "46.78027725",
+            "lon": "-71.28749847"
+          }
+        ]
+      },
+      "pws": {
+        "station": [
+          {
+            "neighborhood": "lac st-charles",
+            "city": "quebec city",
+            "state": "Quebec",
+            "country": "Canada",
+            "id": "IQUEBECL8",
+            "lat": 46.799999,
+            "lon": -71.400002,
+            "distance_km": 1,
+            "distance_mi": 0
+          },
+          {
+            "neighborhood": "Ancienne-Lorette",
+            "city": "LAncienne-Lorette",
+            "state": "QUÃ©BEC",
+            "country": "CANADA",
+            "id": "IQUBECLA14",
+            "lat": 46.801289,
+            "lon": -71.367996,
+            "distance_km": 2,
+            "distance_mi": 1
+          },
+          {
+            "neighborhood": "Station a John",
+            "city": "Sainte-Foy Quebec",
+            "state": "Quebec",
+            "country": "Canada",
+            "id": "IQUEBECQ10",
+            "lat": 46.783615,
+            "lon": -71.360428,
+            "distance_km": 2,
+            "distance_mi": 1
+          },
+          {
+            "neighborhood": "Quebec",
+            "city": "QuÃ©bec",
+            "state": "QUÃ©BEC",
+            "country": "CANADA",
+            "id": "IQUBECQU21",
+            "lat": 46.771938,
+            "lon": -71.372894,
+            "distance_km": 2,
+            "distance_mi": 1
+          },
+          {
+            "neighborhood": "Quartier Laurentien",
+            "city": "Quebec City",
+            "state": "QUEBEC",
+            "country": "CANADA",
+            "id": "IQUEBECQ20",
+            "lat": 46.770420,
+            "lon": -71.434807,
+            "distance_km": 4,
+            "distance_mi": 2
+          },
+          {
+            "neighborhood": "Pointe-de-Sainte-Foy",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC8",
+            "lat": 46.760403,
+            "lon": -71.338432,
+            "distance_km": 5,
+            "distance_mi": 3
+          },
+          {
+            "neighborhood": "Meteo de Quebec",
+            "city": "QuÃ©bec",
+            "state": "QUÃ©BEC",
+            "country": "CANADA",
+            "id": "IQUBECQU13",
+            "lat": 46.808743,
+            "lon": -71.320450,
+            "distance_km": 5,
+            "distance_mi": 3
+          },
+          {
+            "neighborhood": "Cap-Rouge",
+            "city": "QuÃ©bec",
+            "state": "QUÃ©BEC",
+            "country": "CANADA",
+            "id": "IQUBECQU19",
+            "lat": 46.743168,
+            "lon": -71.356453,
+            "distance_km": 5,
+            "distance_mi": 3
+          },
+          {
+            "neighborhood": "Des ChÃ¢tels",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC30",
+            "lat": 46.842552,
+            "lon": -71.386551,
+            "distance_km": 5,
+            "distance_mi": 3
+          },
+          {
+            "neighborhood": "Plateau",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC18",
+            "lat": 46.773857,
+            "lon": -71.316826,
+            "distance_km": 5,
+            "distance_mi": 3
+          },
+          {
+            "neighborhood": "Val-Belair",
+            "city": "Quebec",
+            "state": "Quebec",
+            "country": "Canada",
+            "id": "IQUBECQU5",
+            "lat": 46.841618,
+            "lon": -71.408295,
+            "distance_km": 5,
+            "distance_mi": 3
+          },
+          {
+            "neighborhood": "Duberger-Les Saules",
+            "city": "Quebec City",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUEBE8",
+            "lat": 46.799709,
+            "lon": -71.307549,
+            "distance_km": 6,
+            "distance_mi": 3
+          },
+          {
+            "neighborhood": "Val-Belair",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC34",
+            "lat": 46.847988,
+            "lon": -71.403419,
+            "distance_km": 6,
+            "distance_mi": 3
+          },
+          {
+            "neighborhood": "Saint Louis",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC27",
+            "lat": 46.762569,
+            "lon": -71.313362,
+            "distance_km": 6,
+            "distance_mi": 3
+          },
+          {
+            "neighborhood": "",
+            "city": "Loretteville",
+            "state": "QUéBEC",
+            "country": "CANADA",
+            "id": "IQUBECLO2",
+            "lat": 46.848938,
+            "lon": -71.371254,
+            "distance_km": 6,
+            "distance_mi": 4
+          },
+          {
+            "neighborhood": "Val-Belair",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC12",
+            "lat": 46.850727,
+            "lon": -71.406967,
+            "distance_km": 6,
+            "distance_mi": 4
+          },
+          {
+            "neighborhood": "Quebec,Loretteville",
+            "city": "Loretteville",
+            "state": "QC",
+            "country": "Canada",
+            "id": "IQCLORET2",
+            "lat": 46.845230,
+            "lon": -71.347954,
+            "distance_km": 6,
+            "distance_mi": 4
+          },
+          {
+            "neighborhood": "St-Augustin, Qc",
+            "city": "St-Augustin",
+            "state": "QUEBEC",
+            "country": "CANADA",
+            "id": "IQUEBECS65",
+            "lat": 46.739738,
+            "lon": -71.447571,
+            "distance_km": 7,
+            "distance_mi": 4
+          },
+          {
+            "neighborhood": "Loretteville",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC21",
+            "lat": 46.853718,
+            "lon": -71.376862,
+            "distance_km": 7,
+            "distance_mi": 4
+          },
+          {
+            "neighborhood": "Loretteville",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC40",
+            "lat": 46.852722,
+            "lon": -71.361923,
+            "distance_km": 7,
+            "distance_mi": 4
+          },
+          {
+            "neighborhood": "Montchatel",
+            "city": "Ville De Quebec",
+            "state": "QUEBEC",
+            "country": "CANADA",
+            "id": "IQUEBECV4",
+            "lat": 46.855732,
+            "lon": -71.389420,
+            "distance_km": 7,
+            "distance_mi": 4
+          },
+          {
+            "neighborhood": "CitÃ©-Universitaire",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC25",
+            "lat": 46.781239,
+            "lon": -71.291183,
+            "distance_km": 7,
+            "distance_mi": 4
+          },
+          {
+            "neighborhood": "",
+            "city": "Saint-Augustin-de-Desmaures",
+            "state": "QUEBEC",
+            "country": "CANADA",
+            "id": "IQUEBECS44",
+            "lat": 46.735722,
+            "lon": -71.450394,
+            "distance_km": 7,
+            "distance_mi": 4
+          },
+          {
+            "neighborhood": "NeufchÃ¢tel EstâLebourgneuf",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC53",
+            "lat": 46.841652,
+            "lon": -71.320358,
+            "distance_km": 7,
+            "distance_mi": 4
+          },
+          {
+            "neighborhood": "Duberger-Les Saules",
+            "city": "Quebec City",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUEBE7",
+            "lat": 46.808765,
+            "lon": -71.284073,
+            "distance_km": 8,
+            "distance_mi": 4
+          },
+          {
+            "neighborhood": "NeufchÃ¢tel EstâLebourgneuf",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC16",
+            "lat": 46.838947,
+            "lon": -71.305840,
+            "distance_km": 8,
+            "distance_mi": 5
+          },
+          {
+            "neighborhood": "Saint-Nicolas",
+            "city": "Saint-Nicolas",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCSAINT66",
+            "lat": 46.720467,
+            "lon": -71.339149,
+            "distance_km": 8,
+            "distance_mi": 5
+          },
+          {
+            "neighborhood": "Val-Belair",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC6",
+            "lat": 46.861801,
+            "lon": -71.434456,
+            "distance_km": 8,
+            "distance_mi": 5
+          },
+          {
+            "neighborhood": "NeufchÃ¢tel EstâLebourgneuf",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC35",
+            "lat": 46.841171,
+            "lon": -71.301033,
+            "distance_km": 8,
+            "distance_mi": 5
+          },
+          {
+            "neighborhood": "Saint-Nicolas",
+            "city": "Saint-Nicolas",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCSAINT67",
+            "lat": 46.737465,
+            "lon": -71.301147,
+            "distance_km": 8,
+            "distance_mi": 5
+          },
+          {
+            "neighborhood": "Saint-Nicolas",
+            "city": "Saint-Nicolas",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCSAINT62",
+            "lat": 46.708595,
+            "lon": -71.373116,
+            "distance_km": 9,
+            "distance_mi": 5
+          },
+          {
+            "neighborhood": "",
+            "city": "Saint-Nicolas",
+            "state": "QUéBEC",
+            "country": "CANADA",
+            "id": "IQUBECSA5",
+            "lat": 46.727539,
+            "lon": -71.306961,
+            "distance_km": 9,
+            "distance_mi": 5
+          },
+          {
+            "neighborhood": "Sillery",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC13",
+            "lat": 46.765499,
+            "lon": -71.271637,
+            "distance_km": 9,
+            "distance_mi": 5
+          },
+          {
+            "neighborhood": "Sillery",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC28",
+            "lat": 46.772614,
+            "lon": -71.258408,
+            "distance_km": 10,
+            "distance_mi": 6
+          },
+          {
+            "neighborhood": "Saint-Sacrement",
+            "city": "QuÃ©bec",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUBEC11",
+            "lat": 46.789352,
+            "lon": -71.254845,
+            "distance_km": 10,
+            "distance_mi": 6
+          },
+          {
+            "neighborhood": "Saint-Sauveur",
+            "city": "Quebec City",
+            "state": "QC",
+            "country": "CA",
+            "id": "IQCQUEBE10",
+            "lat": 46.805614,
+            "lon": -71.256485,
+            "distance_km": 10,
+            "distance_mi": 6
+          }
+        ]
+      }
+    }
+  }
+}

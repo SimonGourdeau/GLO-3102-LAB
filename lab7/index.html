@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather.js</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone.js"></script>
+
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<h1 class="title">weather.js</h1>
+
+<div id="locations-container">
+    <div id="locations-list"></div>
+</div>
+
+<div id="forecasts-container">
+    <div id="forecasts-list"></div>
+</div>
+
+<script id="forecast-template" type="text/template">
+    <% _.each(forecasts, function(forecast){ %>
+    <div class="forecast">
+        <h3><%= forecast.date.weekday %></h3>
+        <img src="<%= forecast.icon_url %>" />
+        <p><span class="high"><%= forecast.high.celsius %></span>/<span class="low"><%= forecast.low.celsius %></span></p>
+    </div>
+    <% }); %>
+</script>
+
+<script src="js/models/weather.js"></script>
+<script src="js/collections/weather.js"></script>
+<script src="js/views/weather.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>
